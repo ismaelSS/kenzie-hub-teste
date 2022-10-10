@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toastError } from "../../toast/toasmodels";
 
-const Dashboardd = () => {
+export const Dashboard = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if(localStorage.getItem("@kh_id") === null){
@@ -22,4 +22,4 @@ const Dashboardd = () => {
   );
 };
 
-export default Dashboardd;
+
